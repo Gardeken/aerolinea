@@ -234,8 +234,8 @@ class events {
   validarInputs(input1, input2) {
     if (input1.value == input2.value) {
       selectores.mensajeAlerta("Usted no puede seleccionar la misma fecha");
+      return (input2.value = "Seleccionar fecha de vuelta");
     }
-    input2.value = "Fecha de vuelta";
   }
 }
 
