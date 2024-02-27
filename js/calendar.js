@@ -37,6 +37,8 @@ let date = new Date(),
 class renderCalendar {
   constructor() {
     this.listLi = "";
+    this.year = "";
+    this.month = "";
   }
 
   createCalendar(daystag, currentdate, currMonth, currYear) {
@@ -73,38 +75,22 @@ class renderCalendar {
       const days = this.listLi[i];
       if (
         days.textContent < new Date().getDate() &&
-        currMonth <= new Date().getMonth() &&
+        currMonth === new Date().getMonth() &&
         currYear === new Date().getFullYear()
       ) {
         days.classList.add("inactive");
       }
 
-      if (currMonth < new Date().getMonth()) {
+      if (
+        currMonth < new Date().getMonth() &&
+        currYear < new Date().getFullYear()
+      ) {
         days.classList.add("inactive");
       }
 
       if (currYear < new Date().getFullYear()) {
         days.classList.add("inactive");
       }
-    }
-  }
-
-  prevNextCalendar(prevNextIcon, daystag, currentdate, currMonth, currYear) {
-    for (let i = 0; i < prevNextIcon.length; i++) {
-      const icon = prevNextIcon[i];
-      icon.addEventListener("click", () => {
-        currMonth = icon.id === "prev" ? currMonth - 1 : currMonth + 1;
-
-        if (currMonth < 0 || currMonth > 11) {
-          date = new Date(currYear, currMonth, new Date().getDate());
-          currYear = date.getFullYear();
-          currMonth = date.getMonth();
-        } else {
-          date = new Date();
-        }
-        this.createCalendar(daystag, currentdate, currMonth, currYear);
-        this.validarCalendar(daystag, currMonth, currYear);
-      });
     }
   }
 
@@ -133,8 +119,17 @@ class renderCalendar {
         if (isNaN(Number(e.target.closest("li").textContent))) {
           return;
         }
-        monthselect = currMonth.toString();
-        yearselect = currYear.toString();
+        if (this.month === "") {
+          monthselect = currMonth.toString();
+        } else {
+          monthselect = this.month;
+        }
+        if (this.year === "") {
+          yearselect = currYear.toString();
+        } else {
+          yearselect = this.year;
+        }
+
         dateselect = e.target.closest("li").textContent;
 
         if (
@@ -155,6 +150,27 @@ class renderCalendar {
       }
     });
   }
+
+  prevNextCalendar(prevNextIcon, daystag, currentdate, currMonth, currYear) {
+    for (let i = 0; i < prevNextIcon.length; i++) {
+      const icon = prevNextIcon[i];
+      icon.addEventListener("click", () => {
+        currMonth = icon.id === "prev" ? currMonth - 1 : currMonth + 1;
+
+        if (currMonth < 0 || currMonth > 11) {
+          date = new Date(currYear, currMonth, new Date().getDate());
+          currYear = date.getFullYear();
+          currMonth = date.getMonth();
+        } else {
+          date = new Date();
+        }
+        this.createCalendar(daystag, currentdate, currMonth, currYear);
+        this.validarCalendar(daystag, currMonth, currYear);
+        this.year = currYear;
+        this.month = currMonth;
+      });
+    }
+  }
 }
 
 const calendario = new renderCalendar();
@@ -170,7 +186,7 @@ calendario.prevNextCalendar(
 );
 calendario.selectDate(calendar1, daysTag, currMonth1, currYear1, input1);
 
-calendario.createCalendar(daysTag2, currentDate2, currMonth2, currYear2);
+calendario.createCalendar(daysTag2, currentDate2, currMonth1, currYear2);
 calendario.validarCalendar(daysTag2, currMonth2, currYear2);
 calendario.prevNextCalendar(
   icons2,
