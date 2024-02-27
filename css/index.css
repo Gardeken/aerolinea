@@ -445,6 +445,10 @@ body {
     flex-direction: column;
   }
 
+  .wrapper {
+    width: 80vw;
+  }
+
   #calendario2 {
     place-self: start;
   }
