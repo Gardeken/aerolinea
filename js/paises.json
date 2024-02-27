@@ -1,0 +1,312 @@
+{
+  "countries": [
+    {
+      "name": "Afghanistan",
+      "es_name": "Afganistán"
+    },
+    {
+      "name": "Albania",
+      "es_name": "Albania"
+    },
+    {
+      "name": "Algeria",
+      "es_name": "Algeria"
+    },
+    {
+      "name": "Andorra",
+      "es_name": "Andorra"
+    },
+    {
+      "name": "Angola",
+      "es_name": "Angola"
+    },
+    {
+      "name": "Antigua and Barbuda",
+      "es_name": "Antigua y Barbuda"
+    },
+    {
+      "name": "Argentina",
+      "es_name": "Argentina"
+    },
+    {
+      "name": "Armenia",
+      "es_name": "Armenia"
+    },
+    {
+      "name": "Aruba",
+      "es_name": "Aruba"
+    },
+    {
+      "name": "Australia",
+      "es_name": "Australia"
+    },
+    {
+      "name": "Austria",
+      "es_name": "Austria"
+    },
+    {
+      "name": "Bahamas",
+      "es_name": "Bahamas"
+    },
+    {
+      "name": "Barbados",
+      "es_name": "Barbados"
+    },
+    {
+      "name": "Belgium",
+      "es_name": "Bélgica"
+    },
+    {
+      "name": "Bolivia",
+      "es_name": "Bolivia"
+    },
+    {
+      "name": "Brazil",
+      "es_name": "Brasil"
+    },
+    {
+      "name": "Canada",
+      "es_name": "Canadá"
+    },
+    {
+      "name": "Chile",
+      "es_name": "Chile"
+    },
+    {
+      "name": "China",
+      "es_name": "China"
+    },
+    {
+      "name": "Colombia",
+      "es_name": "Colombia"
+    },
+    {
+      "name": "Costa Rica",
+      "es_name": "Costa Rica"
+    },
+    {
+      "name": "Cuba",
+      "es_name": "Cuba"
+    },
+    {
+      "name": "Denmark",
+      "es_name": "Dinamarca"
+    },
+    {
+      "name": "Dominica",
+      "es_name": "Dominica"
+    },
+    {
+      "name": "Dominican Republic",
+      "es_name": "República Dominicana"
+    },
+    {
+      "name": "Ecuador",
+      "es_name": "Ecuador"
+    },
+    {
+      "name": "El Salvador",
+      "es_name": "El Salvador"
+    },
+    {
+      "name": "Equatorial Guinea",
+      "es_name": "Guinea Ecuatorial"
+    },
+    {
+      "name": "Falkland Islands (Malvinas)",
+      "es_name": "Islas Malvinas"
+    },
+    {
+      "name": "France",
+      "es_name": "Francia"
+    },
+    {
+      "name": "French Guiana",
+      "es_name": "Guyana Francesa"
+    },
+    {
+      "name": "French Polynesia",
+      "es_name": "Polinesia Francesa"
+    },
+    {
+      "name": "Georgia",
+      "es_name": "Georgia"
+    },
+    {
+      "name": "Germany",
+      "es_name": "Alemania"
+    },
+    {
+      "name": "Grenada",
+      "es_name": "Granada"
+    },
+    {
+      "name": "Guadeloupe",
+      "es_name": "Guadalupe"
+    },
+    {
+      "name": "Guatemala",
+      "es_name": "Guatemala"
+    },
+    {
+      "name": "Guinea",
+      "es_name": "Guinea"
+    },
+    {
+      "name": "Guyana",
+      "es_name": "Guyana"
+    },
+    {
+      "name": "Haiti",
+      "es_name": "Haití"
+    },
+    {
+      "name": "Honduras",
+      "es_name": "Honduras"
+    },
+    {
+      "name": "Hungary",
+      "es_name": "Hungría"
+    },
+    {
+      "name": "Iceland",
+      "es_name": "Islandia"
+    },
+    {
+      "name": "Indonesia",
+      "es_name": "Indonesia"
+    },
+    {
+      "name": "Ireland",
+      "es_name": "Irlanda"
+    },
+    {
+      "name": "Italy",
+      "es_name": "Italia"
+    },
+    {
+      "name": "Jamaica",
+      "es_name": "Jamaica"
+    },
+    {
+      "name": "Korea, Republic of",
+      "es_name": "Corea del Sur"
+    },
+    {
+      "name": "Lao People's Democratic Republic",
+      "es_name": "Laos"
+    },
+    {
+      "name": "Maldives",
+      "es_name": "Maldivas"
+    },
+    {
+      "name": "Mali",
+      "es_name": "Mali"
+    },
+    {
+      "name": "Malta",
+      "es_name": "Malta"
+    },
+    {
+      "name": "Mexico",
+      "es_name": "México"
+    },
+    {
+      "name": "Nicaragua",
+      "es_name": "Nicaragua"
+    },
+    {
+      "name": "Northern Mariana Islands",
+      "es_name": "Islas Marianas del Norte"
+    },
+    {
+      "name": "Panama",
+      "es_name": "Panamá"
+    },
+    {
+      "name": "Papua New Guinea",
+      "es_name": "Papua Nueva Guinea"
+    },
+    {
+      "name": "Paraguay",
+      "es_name": "Paraguay"
+    },
+    {
+      "name": "Peru",
+      "es_name": "Perú"
+    },
+    {
+      "name": "Philippines",
+      "es_name": "Filipinas"
+    },
+    {
+      "name": "Poland",
+      "es_name": "Polonia"
+    },
+    {
+      "name": "Portugal",
+      "es_name": "Portugal"
+    },
+    {
+      "name": "Puerto Rico",
+      "es_name": "Puerto Rico"
+    },
+    {
+      "name": "Qatar",
+      "es_name": "Qatar"
+    },
+    {
+      "name": "Russian Federation",
+      "es_name": "Rusia"
+    },
+    {
+      "name": "San Marino",
+      "es_name": "San Marino"
+    },
+    {
+      "name": "Saudi Arabia",
+      "es_name": "Arabia Saudita"
+    },
+    {
+      "name": "Spain",
+      "es_name": "España"
+    },
+    {
+      "name": "Trinidad and Tobago",
+      "es_name": "Trinidad y Tobago"
+    },
+    {
+      "name": "Tunisia",
+      "es_name": "Túnez"
+    },
+    {
+      "name": "Turkey",
+      "es_name": "Turquía"
+    },
+    {
+      "name": "Turks and Caicos Islands",
+      "es_name": "Islas Turcas y Caicos"
+    },
+    {
+      "name": "Tuvalu",
+      "es_name": "Tuvalu"
+    },
+    {
+      "name": "United Arab Emirates",
+      "es_name": "Emiratos Árabes Unidos"
+    },
+    {
+      "name": "United Kingdom",
+      "es_name": "Reino Unido"
+    },
+    {
+      "name": "United States",
+      "es_name": "Estados Unidos"
+    },
+    {
+      "name": "Venezuela",
+      "es_name": "Venezuela"
+    }
+  ]
+}

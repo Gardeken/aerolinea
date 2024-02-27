@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aerolínea</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  <body>
+    <div id="message" class="hidden message"></div>
+    <main id="containerprin" class="container">
+      <div class="container-radio">
+        <div>
+          <label for="ida">Ida</label>
+          <input type="radio" class="radiobtn" name="radio" id="ida" />
+        </div>
+        <div>
+          <label for="dest">Ida y Vuelta</label>
+          <input type="radio" class="radiobtn" name="radio" id="dest" />
+        </div>
+      </div>
+
+      <div class="container-inputs">
+        <div class="container-location">
+          <div id="selectoror" class="selector">
+            <p id="textoor">Origen</p>
+            <div class="resultado hidden" id="resultado1"></div>
+          </div>
+          <div id="selectordest" class="selector">
+            <p id="textodest">Destino</p>
+            <div class="resultado hidden" id="resultado2"></div>
+          </div>
+        </div>
+        <div class="optimizarcalendar">
+          <div class="container-input">
+            <div>
+              <input
+                type="text"
+                value="Seleccione fecha de ida"
+                class="input_readonly"
+                readonly
+                id="date1"
+              />
+            </div>
+            <div class="separador"></div>
+            <div>
+              <input
+                type="text"
+                value="Seleccionar fecha de vuelta"
+                class="input_readonly"
+                readonly
+                id="date2"
+              />
+            </div>
+          </div>
+          <div class="container-calendar">
+            <div id="calendario1" class="hidden wrapper">
+              <div class="header-calendar">
+                <p id="current-date" class="current-date"></p>
+                <div id="icons1" class="icons">
+                  <span id="prev" class="material-symbols-rounded"
+                    >chevron_left</span
+                  >
+                  <span id="next" class="material-symbols-rounded"
+                    >chevron_right</span
+                  >
+                </div>
+              </div>
+              <div id="calendar1" class="calendar">
+                <ul class="weeks">
+                  <li>Dom</li>
+                  <li>Lun</li>
+                  <li>Mar</li>
+                  <li>Miér</li>
+                  <li>Juev</li>
+                  <li>Vier</li>
+                  <li>Sáb</li>
+                </ul>
+                <ul class="days" id="days"></ul>
+              </div>
+            </div>
+            <div id="calendario2" class="hidden wrapper">
+              <div class="header-calendar">
+                <p id="current-date2" class="current-date"></p>
+                <div id="icons2" class="icons">
+                  <span id="prev" class="material-symbols-rounded"
+                    >chevron_left</span
+                  >
+                  <span id="next" class="material-symbols-rounded"
+                    >chevron_right</span
+                  >
+                </div>
+              </div>
+              <div id="calendar2" class="calendar">
+                <ul class="weeks">
+                  <li>Dom</li>
+                  <li>Lun</li>
+                  <li>Mar</li>
+                  <li>Miér</li>
+                  <li>Juev</li>
+                  <li>Vier</li>
+                  <li>Sáb</li>
+                </ul>
+                <ul id="days2" class="days"></ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="responsivepas">
+          <div class="selector pasajeros" id="pasajeros">
+            <p>Seleccionar pasajeros</p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="arrowdown"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m19.5 8.25-7.5 7.5-7.5-7.5"
+              />
+            </svg>
+          </div>
+          <div id="container-pas" class="container-pasajeros hidden">
+            <div class="container-pasajero">
+              <div class="container-pasajero-h">
+                <p class="pasajero">Adulto</p>
+                <p class="pasajero-años">Desde 12 años</p>
+              </div>
+              <div class="container-btn">
+                <button class="adulto btn">-</button>
+                <div>
+                  <p id="adulto" class="pasajero-cantidad">1</p>
+                </div>
+                <button class="adulto btn">+</button>
+              </div>
+            </div>
+            <div class="container-pasajero">
+              <div class="container-pasajero-h">
+                <p class="pasajero">Niños</p>
+                <p class="pasajero-años">De 2 a 11 años</p>
+              </div>
+              <div class="container-btn">
+                <button class="kid btn">-</button>
+                <div>
+                  <p id="kid" class="pasajero-cantidad">0</p>
+                </div>
+                <button class="kid btn">+</button>
+              </div>
+            </div>
+            <div class="container-pasajero">
+              <div class="container-pasajero-h">
+                <p class="pasajero">Bebés</p>
+                <p class="pasajero-años">Menores de 2 años</p>
+              </div>
+              <div class="container-btn">
+                <button class="bebes btn">-</button>
+                <div>
+                  <p id="bebe" class="pasajero-cantidad">0</p>
+                </div>
+                <button class="bebes btn">+</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="js/inputs.js"></script>
+    <script src="js/calendar.js"></script>
+  </body>
+</html>
