@@ -79,6 +79,7 @@ class events {
     event1.addEventListener("click", () => {
       element4.classList.add("margen");
       element2.classList.remove("hidden");
+      element3.classList.add("hidden");
       element1.classList.add("hidden");
       element5.classList.add("hidden");
       element6.classList.add("hidden");
@@ -86,6 +87,7 @@ class events {
 
     event2.addEventListener("click", () => {
       element3.classList.remove("hidden");
+      element2.classList.add("hidden");
       element4.classList.add("margen");
       element1.classList.add("hidden");
       element5.classList.add("hidden");

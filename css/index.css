@@ -130,10 +130,6 @@ body {
   gap: 1rem;
 }
 
-#calendario2 {
-  place-self: end;
-}
-
 .weeks li {
   font-size: 0.8rem;
 }

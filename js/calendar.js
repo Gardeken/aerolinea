@@ -143,10 +143,12 @@ class renderCalendar {
         }
 
         if (monthselect < 10) {
-          input.value = `${dateselect}/0${monthselect}/${yearselect}`;
+          input.value = `${dateselect}/0${
+            Number(monthselect) + 1
+          }/${yearselect}`;
           return Events.validarInputs(input1, input2);
         }
-        input.value = `${dateselect}/${monthselect}/${yearselect}`;
+        input.value = `${dateselect}/${Number(monthselect) + 1}/${yearselect}`;
       }
     });
   }
