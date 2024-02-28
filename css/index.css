@@ -355,7 +355,7 @@ body {
   .container {
     padding: 0;
     padding-bottom: 5rem 1rem;
-    margin: 3rem;
+    margin: 3rem 1rem;
     place-items: center;
   }
 
@@ -455,5 +455,9 @@ body {
 
   #calendario2 {
     place-self: start;
+  }
+
+  .margen {
+    padding-bottom: 5rem;
   }
 }
