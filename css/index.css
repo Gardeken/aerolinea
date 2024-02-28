@@ -457,6 +457,10 @@ body {
     place-self: start;
   }
 
+  .container {
+    padding-bottom: 5rem;
+  }
+
   .margen {
     padding-bottom: 5rem;
   }
