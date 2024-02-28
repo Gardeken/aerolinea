@@ -83,7 +83,7 @@ class renderCalendar {
 
       if (
         currMonth < new Date().getMonth() &&
-        currYear < new Date().getFullYear()
+        currYear <= new Date().getFullYear()
       ) {
         days.classList.add("inactive");
       }
@@ -112,6 +112,7 @@ class renderCalendar {
           e.target.classList.add("active");
         }
       }
+
       if (e.target.classList.contains("inactive") === false) {
         if (e.target.closest("li") === null) {
           return;
@@ -148,6 +149,7 @@ class renderCalendar {
           }/${yearselect}`;
           return Events.validarInputs(input1, input2);
         }
+        Events.validarInputs(input1, input2);
         input.value = `${dateselect}/${Number(monthselect) + 1}/${yearselect}`;
       }
     });

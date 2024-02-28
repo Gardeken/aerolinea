@@ -110,14 +110,14 @@ body {
   background-color: #d8dcff;
   margin-top: 2rem;
   border-radius: 1rem;
-  padding: 0 1rem;
+  padding: 5rem 1rem;
   box-shadow: 1px 12px 23px 8px rgba(0, 0, 0, 0.6);
   display: grid;
   place-items: start;
 }
 
 .margen {
-  padding-bottom: 25rem;
+  padding-bottom: 28rem;
 }
 
 .container-calendar {
@@ -331,6 +331,19 @@ body {
   transition: 0.5s;
 }
 
+.btn-submit {
+  margin: 1rem;
+  position: absolute;
+  place-self: end center;
+}
+
+.btn-submit button {
+  border: none;
+  background-color: #9b59b6;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+}
+
 .hidden {
   display: none;
 }
@@ -347,6 +360,7 @@ body {
   .container {
     width: 90vw;
     padding: 0;
+    padding-bottom: 5rem;
     margin: 3rem 1rem;
     place-items: center;
   }

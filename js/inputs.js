@@ -14,6 +14,7 @@ const input1 = document.querySelector("#date1"),
   textoor = document.querySelector("#textoor"),
   textodest = document.querySelector("#textodest"),
   Btns = document.querySelectorAll(".btn"),
+  btnsubmit = document.querySelector("#submit"),
   message = document.querySelector("#message");
 
 let adulto = Number(document.querySelector("#adulto").textContent),
@@ -134,6 +135,26 @@ class events {
     });
   }
 
+  eventSubmit() {
+    btnsubmit.addEventListener("click", () => {
+      if (
+        input1.value !== "Fecha de ida" &&
+        input2.value !== "Fecha de vuelta" &&
+        textoor.textContent !== "Origen" &&
+        textodest.textContent !== "Destino"
+      ) {
+        selectores.mensajeAlerta(
+          "La compra de su boleto se ha realizado con éxito"
+        );
+
+        textoor.innerText = "Origen";
+        textodest.innerText = "Destino";
+        input1.value = "Fecha de ida";
+        input2.value = "Fecha de vuelta";
+      }
+    });
+  }
+
   OrigenyDestino(ida, dest) {
     ida.addEventListener("change", () => {
       input2.classList.add("hidden");
@@ -238,6 +259,30 @@ class events {
       selectores.mensajeAlerta("Usted no puede seleccionar la misma fecha");
       return (input2.value = "Fecha de vuelta");
     }
+
+    let date1 = "",
+      date2 = "",
+      month1 = "",
+      month2 = "",
+      year1 = "",
+      year2 = "";
+
+    date1 = `${input1.value[0]}${input1.value[1]}`;
+    month1 = `${input1.value[3]}${input1.value[4]}`;
+    year1 = `${input1.value[8]}${input1.value[9]}`;
+
+    date2 = `${input2.value[0]}${input2.value[1]}`;
+    month2 = `${input2.value[3]}${input2.value[4]}`;
+    year2 = `${input2.value[8]}${input2.value[9]}`;
+
+    if (
+      Number(date1) != Number(date2) &&
+      Number(month1) > Number(month2) &&
+      Number(year1) == Number(year2)
+    ) {
+      selectores.mensajeAlerta("Usted no puede seleccionar una fecha previa");
+      input1.value = "Fecha de ida";
+    }
   }
 }
 
@@ -258,6 +303,7 @@ Events.AddandRemove(
 );
 Events.OrigenyDestino(idabtn, destbtn);
 Events.validarPasajeros();
+Events.eventSubmit();
 
 fetch(url)
   .then((response) => {
