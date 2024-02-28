@@ -106,7 +106,7 @@ body {
 .container {
   position: relative;
   z-index: 0;
-  width: 90%;
+  width: 90vw;
   background-color: #d8dcff;
   margin-top: 2rem;
   border-radius: 1rem;
@@ -136,11 +136,10 @@ body {
 
 .input_readonly {
   background-color: transparent;
-  width: 10rem;
   border-radius: 0.5rem;
   border: none;
   cursor: pointer;
-  padding: 1rem;
+  padding: 1rem 0.5rem;
   outline: none;
   transition: 1s;
 }
@@ -199,16 +198,12 @@ body {
   cursor: pointer;
   margin: 1rem 0 2rem 0;
   border-radius: 0.5rem;
-  padding: 1rem;
+  padding: 1rem 0.5rem;
   border: none;
   outline: none;
   width: 8rem;
   appearance: none;
   border: 2px solid #9b59b6;
-}
-
-.selector option {
-  appearance: none;
 }
 
 .pasajeros {
@@ -358,10 +353,9 @@ body {
   }
 
   .container {
-    width: 90vw;
     padding: 0;
     padding-bottom: 5rem;
-    margin: 3rem 1rem;
+    margin: 3rem;
     place-items: center;
   }
 
