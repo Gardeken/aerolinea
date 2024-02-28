@@ -209,7 +209,7 @@ body {
 .pasajeros {
   display: flex;
   gap: 2.5rem;
-  width: 15rem;
+  width: 10vw;
 }
 
 .container-pasajeros {
