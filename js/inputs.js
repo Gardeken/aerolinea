@@ -147,6 +147,9 @@ class events {
           "La compra de su boleto se ha realizado con éxito"
         );
 
+        document.querySelector("#adulto").innerText = "1";
+        document.querySelector("#kid").innerText = "0";
+        document.querySelector("#bebe").innerText = "0";
         textoor.innerText = "Origen";
         textodest.innerText = "Destino";
         input1.value = "Fecha de ida";
