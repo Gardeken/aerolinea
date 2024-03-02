@@ -138,10 +138,10 @@ class events {
   eventSubmit() {
     btnsubmit.addEventListener("click", () => {
       if (
-        input1.value !== "Fecha de ida" &&
-        input2.value !== "Fecha de vuelta" &&
-        textoor.textContent !== "Origen" &&
-        textodest.textContent !== "Destino"
+        input1.value !== "Fecha de ida" ||
+        (input2.value !== "Fecha de vuelta" &&
+          textoor.textContent !== "Origen" &&
+          textodest.textContent !== "Destino")
       ) {
         selectores.mensajeAlerta(
           "La compra de su boleto se ha realizado con éxito"
